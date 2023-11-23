@@ -50,10 +50,29 @@ header .container ul a {
 header .container ul a:hover{
     color:rgb(1, 48, 78);
 }
+header .container .logo {
+    color: rgb(0, 227, 193);
+}
+header .container .logo i {
+    font-size: 25px;
+}
 @media (max-width:767px) {
+    header .container .hoverOn {
+        width: 90%;
+        flex-direction: column;
+    }
+    header .container .logo {
+        width: 100%;
+    }
+    header .container ul {
+        width: 100%;
+        gap:10px;
+        justify-content: end;
+    }
     header .container ul a {
-        color:rgb(146, 170, 186);
+      color:rgb(169, 211, 238);
         font-size: 15px;
+        padding: 0;
     }
     header .container ul li {
         margin: 10px 0;
@@ -66,15 +85,6 @@ header .container ul a:hover{
         visibility: visible;
     }
 }
-
-header .container .logo {
-    color: rgb(0, 227, 193);
-}
-
-header .container .logo i {
-    font-size: 25px;
-}
-
 .round-button {
     position: absolute;
     left: 49.5%;
@@ -415,6 +425,9 @@ header .container .logo i {
     width: 150px;
 }
 @media (max-width:1039px){
+    .vid .container img {
+        height: 250px;
+    }
     .vid .container .text button {
         width: 120px;
     }
@@ -424,12 +437,15 @@ header .container .logo i {
 }
 @media (max-width:767px) {
     .vid .container .text h3 {
-        font-size: 30px;
-margin: 50px auto;
+        font-size: 25px;
+margin: 30px auto;
     }
     .vid .container .text button {
-        padding: 10px 0px;
-        width: 120px;
+        padding: 8px 0px;
+        width: 100px;
+    }
+    .vid .container img {
+        height: 200px;
     }
 }
 .vid .container .text button a {
@@ -595,6 +611,9 @@ transform: translate(-50%,-50%);
     .blog .container img{
         width: 100%;
     }
+    .blog .container> .text {
+        padding: 0;
+    }
     .blog .container .text {
         width: 100%;
         padding:0 25px ;
@@ -658,7 +677,7 @@ padding: 10px 20px;
     color:var(--mean-color);
     background-color: white;
 }
-.start .buttons button:hover{
+.start .buttons button:last-child:hover{
     color:white;
     background-color: var(--mean-color);
 }
@@ -800,9 +819,6 @@ font-size: 20px;
     }
     .footer .container .side1{
         width:100%
-    }
-    .side2 ul li a{
-        padding : 0 10px ;
     }
 }
 footer .container >p{
