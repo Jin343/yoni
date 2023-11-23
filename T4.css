@@ -64,7 +64,15 @@ header .container .logo i {
     header .container .logo {
         width: 100%;
     }
+    header{
+        margin: 0;
+        height: 70px;
+        padding:20px 0;
+    }
     header .container ul {
+        height: 0;
+        margin: 0;
+        margin-top: -10px;
         width: 100%;
         gap:10px;
         justify-content: end;
@@ -87,7 +95,6 @@ header .container .logo i {
 }
 .round-button {
     position: absolute;
-    left: 49.5%;
     bottom: 50px;
     animation: upAndDown 2s  infinite ;
 }
@@ -593,7 +600,7 @@ transform: translate(-50%,-50%);
 }
 @media (max-width:767px) {
     .blog .container{
-        width: 85%;
+        width: 90%;
     }
     .blog .container .content{
         grid-row-gap: 50px;
@@ -613,16 +620,17 @@ transform: translate(-50%,-50%);
     }
     .blog .container> .text {
         padding: 0;
+        margin: 0 auto;
     }
-    .blog .container .text {
+    .blog .container .pic .text {
         width: 100%;
         padding:0 25px ;
     }
     .blog .container .text h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .blog .container .text p{
-font-size: 16px;
+font-size: 14px;
 margin: 0;
 margin-bottom: 10px;
     }
