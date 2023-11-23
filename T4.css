@@ -94,19 +94,20 @@ header .container .logo i {
     }
 }
 .round-button {
+    left: 50%;
     position: absolute;
     bottom: 50px;
     animation: upAndDown 2s  infinite ;
 }
 @keyframes upAndDown {
     0%,100%,30%{
-        transform: translate(0,100%);
+        transform: translate(-50%,100%);
     }
     20%{
-    transform: translate(0%,0%);
+    transform: translate(-50%,0%);
     }
     90%{
-    transform: translate(0%, -100%);
+    transform: translate(-50%, -100%);
     }
 }
 .landing {
@@ -117,6 +118,16 @@ header .container .logo i {
     background-position: 38%;
     background-repeat: no-repeat;
 }
+@media (max-width:1039px){
+    .landing {
+        height: 600px;
+    }
+    }
+    @media (max-width:767px){
+        .landing {
+            height: 500px;
+        }
+        }
 .landing .container{
     height: 100%;
 }
